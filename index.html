@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Bay Crabs | Baltimore-Style Seafood, Atlanta</title>
+  <meta name="description" content="Fresh Baltimore-style blue crabs in Atlanta. Steamed with Old Bay. Delivery or pickup available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Permanent+Marker&family=Inter:wght@400;500;600&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<!-- ===== SVG FILTERS ===== -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+  <filter id="brush-distress">
+    <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="4" seed="3" result="noise"/>
+    <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+    <feDisplacementMap in="SourceGraphic" in2="grayNoise" scale="6" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+    <feComposite in="displaced" in2="SourceGraphic" operator="in"/>
+  </filter>
+  <filter id="splatter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.15" numOctaves="5" seed="7" result="noise"/>
+    <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+    <feDisplacementMap in="SourceGraphic" in2="grayNoise" scale="4" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+    <feComposite in="displaced" in2="SourceGraphic" operator="in"/>
+  </filter>
+</svg>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="nav-links">
+      <a href="#about" class="nav-link">OUR STORY</a>
+      <a href="#menu" class="nav-link">MENU</a>
+      <a href="#vip" class="nav-link">VIP</a>
+      <a href="#hours" class="nav-link">HOURS</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-logo-area">
+      <img src="logo.png" alt="Blue Bay Crabs" class="hero-logo">
+    </div>
+    <div class="hero-content">
+      <div class="hero-tagline">FRESH. HOT. FLAVORFUL.</div>
+      <p class="hero-desc">Baltimore-style seafood. Steamed fresh with Old Bay. Delivered to your door or available for pickup. Location provided after ordering. No shortcuts. No frozen. Just real crabs.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-orange">VIEW MENU</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORDER BAR ===== -->
+<div class="order-bar">
+  <div class="container order-bar-inner">
+    <p class="order-bar-text">Order online, DoorDash, text or call <strong>(678) 322-8715</strong></p>
+    <div class="order-bar-btns">
+      <a href="https://cash.app/order/$bluebaycrabsus" target="_blank" class="btn btn-dark">ORDER HERE</a>
+      <a href="https://www.doordash.com" target="_blank" class="btn-doordash">
+        <svg class="dd-logo" viewBox="0 0 24 24" fill="#FF3008" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.752 1.752 0 0 0 1.242.516h12.049a1.554 1.554 0 1 1 .031 3.108H8.91a.589.589 0 0 0-.415 1.003l3.725 3.747a1.75 1.75 0 0 0 1.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LOCAL STRIP ===== -->
+<div class="local-strip">
+  <div class="container">
+    <p class="local-strip-text">THANK YOU FOR SUPPORTING LOCAL!</p>
+  </div>
+</div>
+
+<!-- ===== RAVENS NOD ===== -->
+<div class="ravens-bar">
+  <div class="ravens-bar-inner">
+    <span class="ravens-stripe ravens-purple"></span>
+    <span class="ravens-stripe ravens-gold"></span>
+    <span class="ravens-stripe ravens-purple"></span>
+  </div>
+</div>
+
+<!-- ===== FEATURES ===== -->
+<section class="features">
+  <div class="feature-row">
+    <div class="feature-num">01</div>
+    <div class="feature-content">
+      <h3>PREMIUM CRABS</h3>
+      <p>Fresh blue crabs. Hand-selected. Steamed with bold Old Bay seasoning. Every order packed with real flavor. No shortcuts.</p>
+    </div>
+  </div>
+  <div class="feature-row feature-alt">
+    <div class="feature-num">02</div>
+    <div class="feature-content">
+      <h3>DELIVERY &amp; PICKUP</h3>
+      <p>We deliver fresh. Straight to your door. Or pick up your order. Location provided after ordering. In-house delivery $25 up to 25 miles.</p>
+    </div>
+  </div>
+  <div class="feature-row">
+    <div class="feature-num">03</div>
+    <div class="feature-content">
+      <h3>FRESH. FLAVORFUL. UNMATCHED.</h3>
+      <p>Heavy seasoning. Fresh catch. That real Baltimore taste you can smell before you open the bag. Let's Get It Crackin'.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT US ===== -->
+<section class="about-us" id="about">
+  <div class="container">
+    <h2 class="section-title">OUR <span class="orange">STORY</span></h2>
+    <div class="about-us-flow">
+      <div class="about-block">
+        <p>Blue Bay Crabs was founded in 2022, inspired by the bold seafood flavors of Baltimore, Maryland.</p>
+        <p>Now based in Atlanta, we bring that authentic coastal taste to the city serving fresh, high quality seafood seasoned to perfection. From crabs and more, every order is made to deliver real flavor and a true seafood experience.</p>
+        <p class="about-tagline">Fresh. Flavorful. Unmatched.</p>
+      </div>
+    </div>
+    <div class="about-us-bottom">
+      <img src="logo.png" alt="Blue Bay Crabs" class="about-us-icon">
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIVIDER ===== -->
+<div class="section-divider">
+  <span class="divider-mark">✦</span>
+</div>
+
+<!-- ===== MENU ===== -->
+<section class="menu-section" id="menu">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="section-title-bg light-blue serve-title">WHAT WE SERVE</span>
+    </h2>
+    <p class="section-sub">Fresh crabs. Steamed fresh with Old Bay. Full pricing when you place your order. Text or call <strong>(678) 322-8715</strong>, or order on DoorDash.</p>
+    <div class="menu-list">
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <span class="menu-item-label">CRAB</span>
+          <h4>XL/L Dozen (Male)</h4>
+          <p>XL Blue Crabs. Steamed fresh. Perfect for sharing. Or not. Old Bay seasoned. Real Baltimore flavor.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-price">$125</span>
+          <span class="menu-item-badge">BEST VALUE</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <span class="menu-item-label">CRAB</span>
+          <h4>1/2 Dozen XL/L (Male)</h4>
+          <p>XL and Large Blue Crabs. Steamed fresh with Old Bay. Sweet, tender meat. Packed with flavor.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-price">$75</span>
+          <span class="menu-item-badge">MOST POPULAR</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <span class="menu-item-label">CRAB</span>
+          <h4>M/S Dozen (Female)</h4>
+          <p>Medium Blue Crabs. Steamed with Old Bay. Great value. Real flavor.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-price">$95</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <span class="menu-item-label">CRAB</span>
+          <h4>1/2 Dozen M/S (Female)</h4>
+          <p>Medium Blue Crabs. Steamed with Old Bay. Sweet. Flavorful. Solid value.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-price">$55</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left">
+          <span class="menu-item-label">SIDE</span>
+          <h4>Butter 8oz</h4>
+          <p>Rich, smooth butter. Made for dipping. The perfect finish for your crabs. $5. Big flavor.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-price">$5</span>
+        </div>
+      </div>
+      <div class="menu-item menu-item-cta" onclick="window.open('https://cash.app/order/$bluebaycrabsus','_blank')">
+        <div class="menu-item-left">
+          <h4>FULL MENU &amp; ORDERING</h4>
+          <p>See everything we offer and place your order.</p>
+        </div>
+        <div class="menu-item-right">
+          <span class="menu-item-arrow">&rarr;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIP ===== -->
+<section class="vip-section" id="vip">
+  <div class="vip-overlay"></div>
+  <div class="container vip-inner">
+    <h2 class="section-title light">VIP <span class="orange">TEXT CLUB</span></h2>
+    <p class="vip-desc">Get exclusive codes, special offers, and first access before everyone else. No spam. Just crabs.</p>
+    <p class="vip-text-info">Text <strong>(202) 490-8148</strong> to join the VIP Text Club and start receiving offers straight to your phone.</p>
+    <p class="vip-or">or sign up below</p>
+    <form class="vip-form" action="mailto:bluebaycrabsatl@gmail.com" method="post" enctype="text/plain">
+      <div class="vip-form-row">
+        <input type="text" class="vip-input" placeholder="YOUR NAME" required>
+        <input type="email" class="vip-input" placeholder="YOUR EMAIL" required>
+      </div>
+      <button type="submit" class="btn btn-orange btn-lg vip-btn">JOIN THE VIP</button>
+    </form>
+    <p class="vip-tagline-restore">Let's Get It <span class="light-blue">Crackin'</span></p>
+  </div>
+</section>
+
+<!-- ===== FOLLOW US ===== -->
+<section class="follow-section">
+  <div class="container">
+    <h3 class="follow-heading">FOLLOW US</h3>
+    <div class="follow-box">
+      <a href="https://instagram.com/bluebaycrabsatl" target="_blank" class="follow-side">
+        <svg class="follow-icon" viewBox="0 0 24 24" fill="#E4405F" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+        </svg>
+        <span class="follow-handle">@bluebaycrabsatl</span>
+      </a>
+      <div class="follow-divider"></div>
+      <a href="https://facebook.com/bluebaycrabsatl" target="_blank" class="follow-side">
+        <svg class="follow-icon" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+        <span class="follow-handle">@bluebaycrabsatl</span>
+      </a>
+      <div class="follow-divider"></div>
+      <a href="https://tiktok.com/@bluebaycrabsatl" target="_blank" class="follow-side">
+        <svg class="follow-icon" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+        </svg>
+        <span class="follow-handle">@bluebaycrabsatl</span>
+      </a>
+      <div class="follow-divider"></div>
+      <a href="https://www.doordash.com" target="_blank" class="follow-side">
+        <svg class="follow-icon" viewBox="0 0 24 24" fill="#FF3008" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.752 1.752 0 0 0 1.242.516h12.049a1.554 1.554 0 1 1 .031 3.108H8.91a.589.589 0 0 0-.415 1.003l3.725 3.747a1.75 1.75 0 0 0 1.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413z"/>
+        </svg>
+        <span class="follow-handle">DoorDash</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-section">
+  <div class="how-overlay"></div>
+  <div class="container how-inner">
+    <h2 class="section-title light">HOW IT WORKS</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>YOU ORDER</h3>
+        <p>Text or call <strong>(678) 322-8715</strong>, or order online. We'll get your seafood ready.</p>
+      </div>
+      <div class="step-arrow">&rarr;</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>WE COOK</h3>
+        <p>Steamed fresh with Old Bay. Your choice of heat. Every batch made to order.</p>
+      </div>
+      <div class="step-arrow">&rarr;</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>WE DELIVER / PICKUP</h3>
+        <p>Fresh. Hot. Ready to enjoy. Pickup address provided after ordering.</p>
+      </div>
+      <div class="step-arrow">&rarr;</div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>YOU CRACK IT</h3>
+        <p>Get home. Open the bag. Enjoy. Let's Get It Crackin'.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOURS & CONTACT ===== -->
+<section class="info-section" id="hours">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <h3 class="info-card-title">
+          <span class="info-accent"></span>
+          HOURS
+        </h3>
+        <div class="hours-list">
+          <div class="hours-row highlight">
+            <span class="day">Friday</span>
+            <span class="time">6 PM to 11 PM</span>
+          </div>
+          <div class="hours-row highlight">
+            <span class="day">Saturday</span>
+            <span class="time">1 PM to 9 PM</span>
+          </div>
+          <div class="hours-row highlight">
+            <span class="day">Sunday</span>
+            <span class="time">1 PM to 6 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3 class="info-card-title">
+          <span class="info-accent"></span>
+          CONTACT
+        </h3>
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-label">PHONE</span>
+            <a href="tel:+16783228715" class="contact-value">(678) 322-8715</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">EMAIL</span>
+            <span class="contact-value">bluebaycrabsatl@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">PAYMENT</span>
+            <span class="contact-value">Card &middot; Cash App &middot; Apple Pay</span>
+          </div>
+          <div class="contact-item social-item">
+            <span class="contact-label">FOLLOW</span>
+            <div class="social-btns">
+              <a href="https://instagram.com/bluebaycrabsatl" target="_blank" class="social-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://tiktok.com/@bluebaycrabsatl" target="_blank" class="social-btn" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BOTTOM ===== -->
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2 class="cta-title">READY TO GET IT <span class="orange">CRACKIN'</span>?</h2>
+    <p class="cta-desc">Text, call, or order on DoorDash. FRESH. HOT. FLAVORFUL.</p>
+    <div class="cta-buttons">
+      <a href="https://cash.app/order/$bluebaycrabsus" target="_blank" class="btn btn-orange btn-lg">ORDER HERE</a>
+      <a href="tel:+16783228715" class="btn btn-orange btn-lg">(678) 322-8715</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-tagline">"Let's Get It Crackin'"</p>
+    <p class="footer-handle">@bluebaycrabsatl</p>
+    <div class="footer-social">
+      <a href="https://instagram.com/bluebaycrabsatl" target="_blank" class="footer-social-btn" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://tiktok.com/@bluebaycrabsatl" target="_blank" class="footer-social-btn" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+      </a>
+    </div>
+    <p class="footer-location">Atlanta, GA &middot; Baltimore-style seafood &middot; Delivery &amp; pickup</p>
+    <p class="footer-thanks">THANK YOU FOR SUPPORTING LOCAL!</p>
+    <p class="footer-copy">&copy; 2026 Blue Bay Crabs. Made fresh in Atlanta.</p>
+    <p class="footer-otion">Website by <a href="https://otion.solutions" target="_blank">Otion LLC</a></p>
+  </div>
+</footer>
+
+<!-- ===== MENU MODAL ===== -->
+<div class="order-overlay" id="orderOverlay" onclick="closeOrderModal(event)">
+  <div class="order-modal" id="orderModal" onclick="event.stopPropagation()">
+    <div class="order-header">
+      <span class="order-header-title">BLUE BAY <span class="gold">CRABS</span></span>
+      <div class="order-header-right">
+        <button class="order-close" onclick="closeOrderModal()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="order-screens">
+      <div class="order-screen active" id="screen-menu">
+        <div class="order-screen-header">
+          <h3>OUR MENU</h3>
+          <p class="order-screen-sub">Prices listed. Place your order below.</p>
+        </div>
+        <div class="order-items" id="orderItems"></div>
+        <div class="modal-order-btns" style="display:flex;flex-direction:column;align-items:center;">
+          <a href="https://cash.app/order/$bluebaycrabsus" target="_blank" class="btn btn-dark" style="width:100%;justify-content:center;margin-bottom:8px;">ORDER HERE</a>
+          <a href="https://www.doordash.com" target="_blank" class="btn-doordash" style="width:100%;justify-content:center;">
+            <svg class="dd-logo" viewBox="0 0 24 24" fill="#FF3008" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.752 1.752 0 0 0 1.242.516h12.049a1.554 1.554 0 1 1 .031 3.108H8.91a.589.589 0 0 0-.415 1.003l3.725 3.747a1.75 1.75 0 0 0 1.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STICKY MOBILE BAR ===== -->
+<div class="sticky-bar">
+  <a href="https://cash.app/order/$bluebaycrabsus" target="_blank" class="sticky-btn">ORDER NOW</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
